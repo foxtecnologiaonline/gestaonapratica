@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1a1a1a;
+  background: #fafaf9;
+}
+
+.prose-content h2 {
+  @apply mt-10 mb-4 text-2xl font-bold text-brand-dark;
+}
+
+.prose-content h3 {
+  @apply mt-8 mb-3 text-xl font-semibold text-brand-dark;
+}
+
+.prose-content p {
+  @apply mb-4 leading-relaxed text-neutral-800;
+}
+
+.prose-content ul {
+  @apply mb-4 ml-6 list-disc space-y-1 text-neutral-800;
+}
+
+.prose-content ol {
+  @apply mb-4 ml-6 list-decimal space-y-1 text-neutral-800;
+}
+
+.prose-content a {
+  @apply text-brand underline underline-offset-2 hover:text-brand-light;
+}
+
+.prose-content blockquote {
+  @apply border-l-4 border-brand/30 pl-4 italic text-neutral-600;
+}
