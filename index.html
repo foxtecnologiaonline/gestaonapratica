@@ -11,19 +11,38 @@
   <link rel="canonical" href="https://gestaonapratica.com.br/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2315161b'/%3E%3Crect x='7' y='18' width='5' height='8' rx='1.5' fill='%23faf7f1' fill-opacity='.55'/%3E%3Crect x='14' y='13' width='5' height='13' rx='1.5' fill='%23faf7f1' fill-opacity='.8'/%3E%3Crect x='21' y='6' width='5' height='20' rx='1.5' fill='%23ff5a36'/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#15161b" />
 </head>
 <body>
 
   <header class="site-header">
     <nav class="nav">
-      <a href="/" class="logo">Gestão<span>Na</span>Prática</a>
+      <a href="/" class="logo">
+        <svg class="logo-mark" width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="var(--ink)"/>
+          <rect x="7" y="18" width="5" height="8" rx="1.5" fill="var(--paper)" fill-opacity="0.55"/>
+          <rect x="14" y="13" width="5" height="13" rx="1.5" fill="var(--paper)" fill-opacity="0.8"/>
+          <rect x="21" y="6" width="5" height="20" rx="1.5" fill="var(--coral)"/>
+        </svg>
+        <span class="logo-word">gestão<em>na</em>prática</span>
+      </a>
       <div class="nav-links">
-        <a href="/#pilares" class="hide-mobile">Pilares</a>
+        <a href="/#pilares">Pilares</a>
         <a href="/blog/">Blog</a>
         <a href="/produtos/">Produtos</a>
         <a href="/#newsletter" class="btn btn-primary btn-sm">Receber conteúdo</a>
+      </div>
+      <div class="nav-tools">
+        <button type="button" class="icon-btn theme-toggle" aria-label="Alternar tema claro/escuro">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
     </nav>
   </header>
@@ -31,8 +50,8 @@
   <section class="hero">
     <div class="wrap">
       <div>
-        <span class="eyebrow">Máquina de conteúdo semanal</span>
-        <h1>Gestão explicada de um jeito que dá para aplicar na segunda-feira.</h1>
+        <span class="eyebrow">● Máquina de conteúdo semanal</span>
+        <h1>Gestão explicada de um jeito que dá para aplicar <em>na segunda-feira</em>.</h1>
         <p class="lead">Toda semana, um pilar da gestão vira um artigo de autoridade, um post pronto para o LinkedIn e, quando faz sentido, uma ferramenta prática para você usar no seu negócio ou no seu time.</p>
         <div class="hero-actions">
           <a href="/blog/" class="btn btn-primary">Ler os artigos</a>
@@ -42,13 +61,13 @@
       <div class="hero-card">
         <h3>Os 7 pilares da semana</h3>
         <ul class="pillar-mini-list">
-          <li><span class="dot"></span>Gestão de Negócios</li>
-          <li><span class="dot"></span>Gestão de Pessoas</li>
-          <li><span class="dot"></span>Gestão Financeira</li>
-          <li><span class="dot"></span>Gestão de IA</li>
-          <li><span class="dot"></span>Gestão de Marketing</li>
-          <li><span class="dot"></span>Gestão Pública</li>
-          <li><span class="dot"></span>Gestão Empresarial</li>
+          <li class="t-negocios"><span class="dot"></span>Gestão de Negócios</li>
+          <li class="t-pessoas"><span class="dot"></span>Gestão de Pessoas</li>
+          <li class="t-financeira"><span class="dot"></span>Gestão Financeira</li>
+          <li class="t-ia"><span class="dot"></span>Gestão de IA</li>
+          <li class="t-marketing"><span class="dot"></span>Gestão de Marketing</li>
+          <li class="t-publica"><span class="dot"></span>Gestão Pública</li>
+          <li class="t-empresarial"><span class="dot"></span>Gestão Empresarial</li>
         </ul>
       </div>
     </div>
@@ -61,42 +80,42 @@
         <p>A GestãoNaPrática não tenta falar de tudo ao mesmo tempo. Cada semana aprofunda um único pilar — assim o conteúdo vira repertório, não ruído.</p>
       </div>
       <div class="grid grid-3">
-        <div class="card pillar-card">
+        <div class="card pillar-card t-negocios">
           <span class="tag">Semana 1</span>
           <h3>Gestão de Negócios</h3>
           <p>Diagnóstico, processos e decisões do dia a dia de quem toca uma operação pequena ou média.</p>
         </div>
-        <div class="card pillar-card">
+        <div class="card pillar-card t-pessoas">
           <span class="tag">Semana 2</span>
           <h3>Gestão de Pessoas</h3>
           <p>Liderança, feedback, contratação e retenção — gestão de gente sem depender de RH grande.</p>
         </div>
-        <div class="card pillar-card">
+        <div class="card pillar-card t-financeira">
           <span class="tag">Semana 3</span>
           <h3>Gestão Financeira</h3>
           <p>Fluxo de caixa, precificação e indicadores financeiros explicados sem jargão contábil.</p>
         </div>
-        <div class="card pillar-card">
+        <div class="card pillar-card t-ia">
           <span class="tag">Semana 4</span>
           <h3>Gestão de IA</h3>
           <p>Como usar inteligência artificial para ganhar tempo real na gestão, sem virar especialista técnico.</p>
         </div>
-        <div class="card pillar-card">
+        <div class="card pillar-card t-marketing">
           <span class="tag">Semana 5</span>
           <h3>Gestão de Marketing</h3>
           <p>Planejamento de conteúdo, aquisição e posicionamento para quem gerencia marketing na prática.</p>
         </div>
-        <div class="card pillar-card">
+        <div class="card pillar-card t-publica">
           <span class="tag">Semana 6</span>
           <h3>Gestão Pública</h3>
           <p>Indicadores, processos e prestação de contas para quem gere equipes e serviços públicos.</p>
         </div>
-        <div class="card pillar-card">
+        <div class="card pillar-card t-empresarial">
           <span class="tag">Semana 7</span>
           <h3>Gestão Empresarial</h3>
           <p>Visão estratégica, governança e o salto do operacional para a gestão de fato.</p>
         </div>
-        <div class="card pillar-card" style="background: var(--bg-alt); border-style: dashed;">
+        <div class="card pillar-card" style="background: var(--paper-alt); border-style: dashed; border-top-style: dashed;">
           <span class="tag">E o ciclo recomeça</span>
           <h3>Semana 8 = Negócios de novo</h3>
           <p>Mesmo pilar, assunto novo e mais específico — repertório que se acumula ao longo do tempo.</p>
@@ -105,7 +124,7 @@
     </div>
   </section>
 
-  <section style="background: #fff;">
+  <section class="section-alt">
     <div class="wrap">
       <div class="section-head">
         <h2>Como o conteúdo é produzido</h2>
@@ -138,19 +157,19 @@
         <p>Ferramentas para aplicar o conteúdo sem depender de consultoria cara.</p>
       </div>
       <div class="grid grid-3">
-        <div class="card">
-          <span class="pill blue">Checklist</span>
-          <h3 style="color:var(--navy); margin: 12px 0 6px;">Diagnóstico Rápido de Gestão</h3>
+        <div class="card t-negocios">
+          <span class="pill">Checklist</span>
+          <h3 style="font-family:var(--font-display); color:var(--ink); margin: 12px 0 6px; font-size:1.1rem;">Diagnóstico Rápido de Gestão</h3>
           <p style="color:var(--muted); font-size:0.95rem;">5 perguntas para descobrir onde sua empresa está perdendo dinheiro. A partir de R$ 19.</p>
         </div>
-        <div class="card">
+        <div class="card t-ia">
           <span class="pill">E-book</span>
-          <h3 style="color:var(--navy); margin: 12px 0 6px;">Guia Prático de IA para Gestores</h3>
+          <h3 style="font-family:var(--font-display); color:var(--ink); margin: 12px 0 6px; font-size:1.1rem;">Guia Prático de IA para Gestores</h3>
           <p style="color:var(--muted); font-size:0.95rem;">5 tarefas para delegar à IA ainda esta semana. A partir de R$ 37.</p>
         </div>
-        <div class="card">
-          <span class="pill blue">Mini-curso</span>
-          <h3 style="color:var(--navy); margin: 12px 0 6px;">Fundamentos de Gestão Empresarial</h3>
+        <div class="card t-empresarial">
+          <span class="pill">Mini-curso</span>
+          <h3 style="font-family:var(--font-display); color:var(--ink); margin: 12px 0 6px; font-size:1.1rem;">Fundamentos de Gestão Empresarial</h3>
           <p style="color:var(--muted); font-size:0.95rem;">Do operacional à estratégia, em aulas curtas. A partir de R$ 47.</p>
         </div>
       </div>
@@ -178,8 +197,16 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <a href="/" class="logo" style="color:#fff;">Gestão<span>Na</span>Prática</a>
-          <p style="margin-top:14px; max-width: 34ch; font-size:0.9rem;">Conteúdo de gestão direto ao ponto, um pilar por semana, para quem gere negócios, pessoas, finanças e times sem tempo a perder.</p>
+          <a href="/" class="logo" style="color:var(--on-dark);">
+            <svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="9" fill="var(--on-dark)" fill-opacity="0.12"/>
+              <rect x="7" y="18" width="5" height="8" rx="1.5" fill="var(--on-dark)" fill-opacity="0.5"/>
+              <rect x="14" y="13" width="5" height="13" rx="1.5" fill="var(--on-dark)" fill-opacity="0.75"/>
+              <rect x="21" y="6" width="5" height="20" rx="1.5" fill="var(--coral)"/>
+            </svg>
+            <span class="logo-word" style="color:var(--on-dark);">gestão<em>na</em>prática</span>
+          </a>
+          <p class="footer-tagline">Conteúdo de gestão direto ao ponto — um pilar por semana, para quem gere negócios, pessoas, finanças e times sem tempo a perder.</p>
         </div>
         <div>
           <h4>Navegar</h4>
@@ -198,11 +225,12 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 GestãoNaPrática. Todos os direitos reservados.</span>
+        <span>© <span data-year>2026</span> GestãoNaPrática. Todos os direitos reservados.</span>
         <span>Feito para gestores que preferem prática a teoria.</span>
       </div>
     </div>
   </footer>
 
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
